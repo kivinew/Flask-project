@@ -11,9 +11,9 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/contact')
+@app.route('/contacts')
 def contact():
-    return render_template('contact.html')
+    return render_template('contacts.html')
 
 @app.route('/<name>')
 def hello(name):

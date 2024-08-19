@@ -1,7 +1,8 @@
 /* Общие стили */
-body {
+html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -17,6 +18,7 @@ header {
 
 /* Основной контент */
 .container {
+    min-height: calc(100% - 50px);
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -41,12 +43,18 @@ nav a {
 }
 
 /* Заголовки */
-h1, h2 {
+h1 {
     color: #333;
+    margin-top: 20px;  /* Отступ сверху для h */
+    margin-bottom: 20px; /* Отступ снизу для h */
+    font-size: 1.5em;     /* Размер шрифта для h */
 }
 
-h1 {
-    margin-bottom: 10px;
+h2 {
+    color: #0581c9;
+    margin-top: 20px;  /* Отступ сверху для h */
+    margin-bottom: 20px; /* Отступ снизу для h */
+    font-size: 1.5em;     /* Размер шрифта для h */
 }
 
 /* Параграфы */
@@ -79,9 +87,12 @@ footer {
     color: #fff;
     position: relative;
     bottom: 0;
+    height: 50px;
     width: 100%;
     margin-top: 20px;
 }
+
+.content { min-height: calc(65% - 100px); }
 
 /* Скрытая ссылка */
 .hidden-link {
