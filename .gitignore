@@ -1,0 +1,49 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+.venv/
+venv/
+myenv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+
+# IDE and Editor specific files
+.idea/
+.vscode/
+*.swp
+*~
+*.bak
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
+
+# Test and coverage reports
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest cache
+.cache/
+pytest_cache/
+
+# Other files
+*.DS_Store
+*.tgz
+*.gz
+*.zip
