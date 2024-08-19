@@ -1,0 +1,98 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Заголовок */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Основной контент */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Заголовки */
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Параграфы */
+p {
+    margin: 10px;
+    padding: 0px;
+}
+
+/* Ссылки */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+em {
+    position: fixed; /* Фиксированное позиционирование */
+    color:rgba(2, 65, 138, 0.753);
+    right: 10px; /* Отступ от правого края страницы */
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Скрытая ссылка */
+.hidden-link {
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 0px; /* Отступ от нижнего края страницы */
+    right: 0px; /* Отступ от правого края страницы */
+    font-size: 0.7em; /* Меньший размер шрифта */
+    color: rgba(88, 87, 87, 0.3); /* Полупрозрачный цвет текста */
+    text-decoration: none;
+}
+
+.hidden-link:hover {
+    color: rgba(65, 63, 63, 0.5); /* Цвет текста при наведении */
+}

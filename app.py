@@ -3,18 +3,25 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/<name>')
-def home(name):
-    return render_template('index.html', name=name)
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 @app.route('/about')
 def about():
-    return "About Page"
+    return render_template('about.html')
 
-@app.route('/hello/<name>')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/<name>')
 def hello(name):
-    return f"Hello, {name}!"
+    return render_template('index.html', name=name)
 
+@app.route('/kivinew')
+def kivinew():
+    return render_template('kivinew.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

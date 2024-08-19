@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Flask App</title>
+    <title>Сайт-визитка</title>
+    <link rel="stylesheet" href="static/secret_style.css"> <!-- Подключаем таблицу стилей -->
 </head>
 <body>
-    <h1>Hello, {{ name }}!</h1>
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p>Я инженер связи. В свободное время изучаю программирование на Python.</p>
+        
+        <h2>Мои услуги</h2>
+        <ul>
+            <li>Создание сайтов</li>
+            <li>Разработка приложений</li>
+            <li>Поддержка сетевой инфраструктуры</li>
+        </ul>
+        
+        <h2>Контакты</h2>
+        <p>Вы можете связаться со мной по электронной почте: <a href="mailto:kivinew@gmail.com">kivinew@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 KiViNeW. Все права защищены.</p>
+    </footer>
+
+    <a href="http://youtube.com/kivinew" class="hidden-link">Секретная ссылка</a>
 </body>
 </html>
