@@ -44,10 +44,10 @@ nav a {
 
 /* Заголовки */
 h1 {
-    color: #333;
+    color: #0f061f;
     margin-top: 20px;  /* Отступ сверху для h */
     margin-bottom: 20px; /* Отступ снизу для h */
-    font-size: 1.5em;     /* Размер шрифта для h */
+    font-size: 2em;     /* Размер шрифта для h */
 }
 
 h2 {
