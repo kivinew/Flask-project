@@ -18,7 +18,7 @@ header {
 
 /* Основной контент */
 .container {
-    min-height: calc(100% - 50px);
+    min-height: calc(65% - 100px);
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -39,7 +39,7 @@ nav ul li {
 
 nav a {
     color: #fff;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 /* Заголовки */
@@ -65,17 +65,16 @@ p {
 
 /* Ссылки */
 a {
-    color: #007bff;
-    text-decoration: none;
+    text-decoration:double;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 em {
     position: fixed; /* Фиксированное позиционирование */
-    color:rgba(2, 65, 138, 0.753);
+    color:rgba(6, 99, 206, 0.753);
     right: 10px; /* Отступ от правого края страницы */
 }
 
@@ -92,18 +91,16 @@ footer {
     margin-top: 20px;
 }
 
-.content { min-height: calc(65% - 100px); }
-
 /* Скрытая ссылка */
 .hidden-link {
     position: fixed; /* Фиксированное позиционирование */
     bottom: 0px; /* Отступ от нижнего края страницы */
     right: 0px; /* Отступ от правого края страницы */
     font-size: 0.7em; /* Меньший размер шрифта */
-    color: rgba(88, 87, 87, 0.3); /* Полупрозрачный цвет текста */
+    color: rgba(161, 161, 161, 0.3); /* Полупрозрачный цвет текста */
     text-decoration: none;
 }
 
 .hidden-link:hover {
-    color: rgba(65, 63, 63, 0.5); /* Цвет текста при наведении */
+    color: rgba(128, 166, 248, 0.5); /* Цвет текста при наведении */
 }

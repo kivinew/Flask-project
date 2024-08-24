@@ -1,31 +1,30 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
-        <nav>
-            <ul>
-                <li><a href="/about">Обо мне</a></li>
-                <li><a href="/contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="content">
-        <h2>Главная страница</h2>
+{% extends 'template.html' %}
 
-        <p>Этот сайт написан при помощи CHATGPT.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 KiViNeW. Все права защищены.</p>
-    </footer>
-    <em>Это кажется невозможным, только пока не будет сделано</em>
-    
-    <a href="http://127.0.0.1:5000/kivinew" class="hidden-link">Скрытая ссылка</a>
-</body>
-</html>
+{% block title %}Главная{% endblock %}
+
+{% block header %}
+    <h1>Добро пожаловать на мой сайт!</h1>
+    <nav>
+        <ul>
+            <li><a href="/about">Обо мне</a></li>
+            <li><a href="/contacts">Контакты</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block main %}
+    <h2>Главная страница</h2>
+    <ul>
+        <p>
+            Привет друг. Спасибо, что посетил эту страницу.
+        </p>
+    </ul>
+{% endblock %}
+
+{% block aphorism %}
+    Это кажется невозможным, только пока не будет сделано
+{% endblock %}
+
+{% block hiddenlink %}
+    http://127.0.0.1:5000/kivinew
+{% endblock %}

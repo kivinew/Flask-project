@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"><!-- Подключаем таблицу стилей -->
 </head>
 <body>
     <header>
@@ -16,17 +16,21 @@
             </ul>
         </nav>
     </header>
-    <main class="content">
+    <main class="container">
         <h2>Связь со мной</h2>
         <p><strong>Звони:</strong></p>
-        <p><a href="tel:+79043704567"><strong>8-904-370-45-67</strong></a></p>
-        <p><a href="tel:+79230347033"><strong>8-923-034-70-33</strong></a></p>
+        <ul>
+            <li><p><a href="tel:+79043704567"><strong>8-904-370-45-67</strong></a></p></li>
+            <li><p><a href="tel:+79230347033"><strong>8-923-034-70-33</strong></a></p></li>
+        </ul>
 
         <p><strong>Пиши:</strong></p>
         
-        <p><strong><a href="https://t.me/kivinew" target="_blank">в Telegram</strong></a></p>
-        <p><strong><a href="https://wtsp.cc/79043704567" target="_blank">в WhatsApp</strong></a></p>
-        <p><strong><a href="mailto:kivinew@gmail.com">на E-почту</a></strong></p>
+        <ul>
+            <li><p><strong><a href="https://t.me/kivinew" target="_blank">в Telegram</strong></a></p></li>
+            <li><p><strong><a href="https://wtsp.cc/79043704567" target="_blank">в WhatsApp</strong></a></p></li>
+            <li><p><strong><a href="mailto:kivinew@gmail.com">на E-почту</a></strong></p></li>
+        </ul>
     </main>
     <footer>
         <p>&copy; 2024 KiViNeW. Все права защищены.</p>

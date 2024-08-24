@@ -1,35 +1,32 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт-визитка</title>
-    <link rel="stylesheet" href="static/css/secret_style.css"> <!-- Подключаем таблицу стилей -->
-</head>
-<body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
-    </header>
-    
-    <div class="container">
-        <h2>Обо мне</h2>
-        <p>Я инженер связи. В свободное время изучаю программирование на Python.</p>
-        
-        <h2>Мои услуги</h2>
+{% extends 'template.html' %}
+
+{% block title %}{{name}}{% endblock %}
+
+{% block header %}
+    <h1>Вариант страницы для {{name}}</h1>
+    <nav>
         <ul>
-            <li>Создание сайтов</li>
-            <li>Разработка приложений</li>
-            <li>Поддержка сетевой инфраструктуры</li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="/about">Обо мне</a></li>
+            <li><a href="/contacts">Контакты</a></li>
         </ul>
-        
-        <h2>Контакты</h2>
-        <p>Вы можете связаться со мной по электронной почте: <a href="mailto:kivinew@gmail.com">kivinew@gmail.com</a></p>
-    </div>
+    </nav>
+{% endblock %}
+    
+{% block main %}
+    <h2>Внимание!</h2>
+    <p>Приветствую тебя, гость. Ты перешёл на несуществующую страницу с именем "{{name}}". Эта страница создана исключительно для тебя и сейчас будет удалена.</p>
+    <p>Ты можешь связаться со мной в Telegram: <a href="https://t.me/kivinew" target="_blank">kivinew</a></p>
+    
+    <script>
+        setTimeout(function() {window.location.href = "/";}, 5000); // редирект на главную через 5 секунд
+    </script>
+{% endblock %}
 
-    <footer>
-        <p>&copy; 2024 KiViNeW. Все права защищены.</p>
-    </footer>
+{% block aphorism %}
+    Жизнь задыхается без цели.
+{% endblock %}
 
-    <a href="http://youtube.com/kivinew" class="hidden-link">Секретная ссылка</a>
-</body>
-</html>
+{% block hiddenlink %}
+    http://127.0.0.1:5000/kivinew
+{% endblock %}

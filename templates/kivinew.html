@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Секретная страница</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"><!-- Подключаем таблицу стилей -->
 </head>
 <body>
     <header>
-        <h1>☺☺☺☺☺☺☺</h1>
+        <h1>Ещё обо мне</h1>
         <nav>
             <ul>
                 <li><a href="/">Главная</a></li>
@@ -17,15 +17,16 @@
             </ul>
         </nav>
     </header>
-    <main class="content">
-        <h2>Секретная страница</h2>
-
-        <p>Этот сайт написан при помощи CHATGPT.</p>
+    <main class="container">
+        <h2>Секретная информация</h2>
+        <ul>
+            <p>Этот сайт написан при помощи <a href="https://dev.yqcloud.top/#/chat/1724517933257" target="_blank"><strong>CHATGPT</strong></a>.</p>
+        </ul>
     </main>
     <footer>
         <p>&copy; 2024 KiViNeW. Все права защищены.</p>
     </footer>
-    <em></em>
+    <em>Люди, не имеющие недостатков, имеют очень мало достоинств.</em>
     <a href="http://youtube.com/@synwise" class="hidden-link" target="_blank">Скрытая ссылка</a>
 </body>
 </html>

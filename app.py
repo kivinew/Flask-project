@@ -4,6 +4,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
+@app.route('/home')
 def home():
     return render_template('home.html')
 
@@ -15,13 +16,13 @@ def about():
 def contact():
     return render_template('contacts.html')
 
-@app.route('/<name>')
-def hello(name):
-    return render_template('index.html', name=name)
-
 @app.route('/kivinew')
 def kivinew():
     return render_template('kivinew.html')
+
+@app.route('/<string:name>')
+def hello(name):
+    return render_template('index.html', name=name)
 
 if __name__ == '__main__':
     app.run(debug=True)
