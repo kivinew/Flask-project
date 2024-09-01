@@ -1,4 +1,4 @@
-{% extends 'template.html' %}
+{% extends 'base_template.html' %}
 
 {% block title %}Обо мне{% endblock %}
 
@@ -17,7 +17,7 @@
     <p>Я инженер техподдержки в компании <a href="https://ooo-kes.ru/" target="_blank"><strong>КЭС</strong></a> с опытом работы около 3 лет. В свободное время изучаю программирование на Python.
     Попутно изучаю веб-программирование. Этот сайт был создан с использованием <a href="https://ru.wikipedia.org/wiki/Flask_(веб-фреймворк)" target="_blank"><strong>Flask</strong></a> и <a href="https://dev.yqcloud.top/#/chat/1724517933257" target="_blank"><strong>ChatGPT</strong></a>.
     Я стремлюсь развивать свои навыки в веб-программировании и делиться своими знаниями.</p>
-    <p>Если у тебе есть, что мне сказать, или хочешь помочь, заходи на страницу <strong><a href="/contacts">контактов</a></strong>.</p>
+    <p>Если у тебя есть, что мне сказать, или хочешь помочь, заходи на страницу <strong><a href="/contacts">контактов</a></strong>.</p>
 {% endblock %}
 
 {% block aphorism %}
@@ -25,5 +25,5 @@
 {% endblock %}
 
 {% block hiddenlink %}
-    http://127.0.0.1:5000/kivinew
+    /kivinew
 {% endblock %}

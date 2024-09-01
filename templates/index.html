@@ -1,4 +1,4 @@
-{% extends 'template.html' %}
+{% extends 'base_template.html' %}
 
 {% block title %}{{name}}{% endblock %}
 
@@ -15,7 +15,7 @@
     
 {% block main %}
     <h2>Внимание!</h2>
-    <p>Приветствую тебя, гость. Ты перешёл на несуществующую страницу с именем "{{name}}". Эта страница создана исключительно для тебя и сейчас будет удалена.</p>
+    <p>Приветствую тебя, гость. Ты перешёл на несуществующую страницу с именем "{{name}}". Страница была создана для тебя, но сейчас будет удалена.</p>
     <p>Ты можешь связаться со мной в Telegram: <a href="https://t.me/kivinew" target="_blank">kivinew</a></p>
     
     <script>
@@ -28,5 +28,5 @@
 {% endblock %}
 
 {% block hiddenlink %}
-    http://127.0.0.1:5000/kivinew
+    /kivinew
 {% endblock %}
